@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Noto+Sans:wght@300&family=Poppins:wght@200;300;500&family=Roboto:ital,wght@0,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #2c3e50;
+    background-color: #dfdbe5;
+}
+
+.container{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.calc-bask{
+    padding: 1em;
+    box-shadow: 6px 6px 20px gray -6px;
+    background-color: #dfdbe5;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.3em;
+}
+
+@media  (min-width: 500px){
+    .calc-bask{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 500px;
+        width: 100%;
+        padding: 2em;
+    }
+}
+
+.form label,
+.form button {
+    margin-top: 1em;
+}
+
+.form input,
+.form button {
+  font-size: inherit;
+  font-family: inherit;
+  width: 100%;
+  padding: 0.5em;
+}
+
+.form button{
+    background-color: rgb(237, 231, 231);
+    cursor: pointer;
+    border-radius: 0.3em;
+    width: 90%;
+}
+
+.form button:hover{
+    filter: opacity(0.9);
+}
+
+.form button:active{
+    background-color: #ce48fa;
+    color: #000;
+    filter: opacity(0.9);
+}
+
+.result{
+    display: flex;
+    justify-content: space-between;
+}
+
+.calc{
+    background-color: #ce48fa;
+    cursor: pointer;
+    border-radius: 0.3em;
+    width: 60%;
+}
+
